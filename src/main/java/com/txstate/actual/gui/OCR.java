@@ -192,7 +192,7 @@ public class OCR extends JFrame implements Runnable {
 			letterListModel.clear();
 
 			while((line = r.readLine()) != null) {
-				System.out.println(line);
+				//System.out.println(line);
 				SampleData ds =	new	SampleData(line.charAt(0), OCR.DOWNSAMPLE_WIDTH, OCR.DOWNSAMPLE_HEIGHT); 
 				letterListModel.add(i++, ds);
 				int idx=2;
